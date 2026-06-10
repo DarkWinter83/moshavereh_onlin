@@ -1,0 +1,138 @@
+.about-page-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.about-hero-card {
+  background: linear-gradient(135deg, #b1effe 0%, #e0f7fc 100%);
+  border-radius: 20px;
+  padding: 50px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+.about-hero-card h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+.about-tagline {
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+.about-box-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+.about-box-card h2 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-box-card p {
+  color: #475569;
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 0.95rem;
+}
+
+.about-two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.about-goals-list {
+  padding-right: 20px;
+}
+.about-goals-list li {
+  list-style-type: square;
+  color: #475569;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.about-stats-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+}
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.steps-section {
+  text-align: center;
+}
+.steps-section h2 {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.about-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.step-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 25px;
+  position: relative;
+  transition: transform 0.2s;
+}
+.step-card:hover {
+  transform: translateY(-3px);
+}
+.step-num {
+  width: 35px;
+  height: 35px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 15px auto;
+}
+.step-card h4 {
+  color: #1e293b;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+.step-card p {
+  text-align: center;
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+/* t.me/DarkWinter_83 */

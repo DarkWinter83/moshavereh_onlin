@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشاور دانشگاه</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/profile_moshaveran.css" />
+  </head>
+  <body id="logged-in">
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo-brand">
+          <img src="../ASSETS/IMAGE/logo.svg" alt="لوگوی سایت مشاوره" />
+          <span>سایت مشاوره‌ی دانشگاه</span>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">صفحه‌ی اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران</a></li>
+            <li><a href="about.html">درباره‌ی مرکز مشاوره</a></li>
+            <li><a href="#contact_us">ارتباط با ما</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="login.html" class="nav-auth-btn guest-element"
+            >ورود | ثبت‌نام</a
+          >
+          <a href="profile_student.html" class="nav-profile-btn user-element"
+            ><span class="icon-person">.</span> پروفایل من</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!---------------------------------------------------------------------------------------------->
+    <main class="global-container profile-page-main">
+      <section class="consultant-info-card">
+        <div class="info-header">
+          <img
+            src="../ASSETS/IMAGE/download (1).jpg"
+            alt="دکتر علی علوی"
+            class="main-profile-img"
+          />
+          <div class="info-text">
+            <h2>دکتر علی علوی</h2>
+            <p class="specialty">
+              تخصص: مشاوره فردی، کنترل اضطراب و پیشرفت تحصیلی
+            </p>
+            <p class="license-number">شماره نظام روان‌شناسی: م-12345</p>
+            <div class="rating-badge">
+              <span class="icon-star"></span> <strong>4.9</strong> (62 نظر)
+            </div>
+          </div>
+        </div>
+        <hr class="card-divider" />
+        <div class="info-bio">
+          <h3>درباره مشاور</h3>
+          <p>
+            اینجانب علی علوی، فارغ‌التحصیل دکترای روان‌شناسی بالینی، با بیش از
+            12 سال تجربه در حوزه مشاوره دانشجویی و فردی در دانشگاه‌های کشور
+            فعالیت دارم. هدف من در این مرکز، کمک به دانشجویان عزیز جهت عبور از
+            چالش‌های روحی، استرس‌های دوران امتحانات، و تنظیم روابط بین‌فردی در
+            محیط دانشگاه است. تمامی جلسات در محیطی کاملاً محرمانه و امن برگزار
+            می‌شود.
+          </p>
+          <div class="pricing-info">
+            <span
+              ><strong>هزینه ویزیت (جلسه 45 دقیقه‌ای):</strong> رایگان (ویژه
+              دانشجویان دانشگاه)</span
+            >
+          </div>
+        </div>
+      </section>
+      <!--  ------------------------------------------------------------------------------------------------------->
+      <section class="booking-box-card">
+        <h2>زمان‌های خالی و رزرو نوبت</h2>
+        <p class="subtitle">
+          نوع مشاوره، روز و ساعت دلخواه خود را انتخاب کنید:
+        </p>
+
+        <form class="booking-form">
+          <div class="booking-group">
+            <span class="group-title">1. نوع جلسه:</span>
+            <div class="custom-radio-group">
+              <label class="radio-tile">
+                <input
+                  type="radio"
+                  name="visit_type"
+                  value="presence"
+                  checked
+                />
+                <div class="tile-content">
+                  <span class="icon-building"></span>
+                  <span>حضوری</span>
+                </div>
+              </label>
+
+              <label class="radio-tile">
+                <input type="radio" name="visit_type" value="online" />
+                <div class="tile-content">
+                  <span class="icon-web"></span>
+                  <span>آنلاین </span>
+                </div>
+              </label>
+
+              <label class="radio-tile">
+                <input type="radio" name="visit_type" value="oncall" />
+                <div class="tile-content">
+                  <span class="icon-telephone2"></span>
+                  <span>تلفنی</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="booking-group">
+            <span class="group-title">2. انتخاب روز مراجعت:</span>
+            <div class="days-grid">
+              <label class="day-selector">
+                <input type="radio" name="booking_day" value="شنبه" checked />
+                <div class="day-box">
+                  <span class="day-name">شنبه</span>
+                  <span class="day-date">23 خرداد</span>
+                </div>
+              </label>
+
+              <label class="day-selector">
+                <input type="radio" name="booking_day" value="یکشنبه" />
+                <div class="day-box">
+                  <span class="day-name">یکشنبه</span>
+                  <span class="day-date">24 خرداد</span>
+                </div>
+              </label>
+
+              <label class="day-selector">
+                <input type="radio" name="booking_day" value="دوشنبه" />
+                <div class="day-box">
+                  <span class="day-name">دوشنبه</span>
+                  <span class="day-date">25 خرداد</span>
+                </div>
+              </label>
+
+              <label class="day-selector">
+                <input type="radio" name="booking_day" value="چهارشنبه" />
+                <div class="day-box">
+                  <span class="day-name">چهارشنبه</span>
+                  <span class="day-date">27 خرداد</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="booking-group">
+            <span class="group-title">3. ساعت‌های خالی موجود:</span>
+            <div class="times-grid">
+              <label class="time-selector">
+                <input
+                  type="radio"
+                  name="booking_time"
+                  value="09:00"
+                  required
+                />
+                <span class="time-box">09:00 تا 09:45</span>
+              </label>
+
+              <label class="time-selector">
+                <input type="radio" name="booking_time" value="10:00" />
+                <span class="time-box">10:00 تا 10:45</span>
+              </label>
+
+              <label class="time-selector disabled">
+                <input
+                  type="radio"
+                  name="booking_time"
+                  value="11:00"
+                  disabled
+                />
+                <span class="time-box">11:00 (رزرو شده)</span>
+              </label>
+
+              <label class="time-selector">
+                <input type="radio" name="booking_time" value="13:30" />
+                <span class="time-box">13:30 تا 14:15</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-booking-btn">
+            تایید و ثبت نوبت مشاوره
+          </button>
+        </form>
+      </section>
+      <!--------------------------------------------------------------------------------------------------------------------->
+      <section class="comments-section-card">
+        <div class="comments-header">
+          <h2>نظرات و تجربیات دانشجویان</h2>
+          <button type="button" class="add-comment-btn">ثبت نظر جدید +</button>
+        </div>
+
+        <div class="comments-list">
+          <div class="single-comment">
+            <div class="comment-meta">
+              <span class="commenter-name">دانشجوی روان‌شناسی</span>
+              <span class="comment-rating"
+                ><span class="icon-star"></span> 5.0</span
+              >
+            </div>
+            <p class="comment-text">
+              من برای کاهش استرس شدید قبل از کنکور ارشد به ایشون مراجعه کردم.
+              راهکارهای رفتاری که پیشنهاد دادن عالی بود و واقعاً تونستم شرایط رو
+              کنترل کنم. برخوردشون بسیار صمیمی و آرامش‌بخش هست.
+            </p>
+          </div>
+
+          <div class="single-comment">
+            <div class="comment-meta">
+              <span class="commenter-name">دانشجوی مهندسی</span>
+              <span class="comment-rating"
+                ><span class="icon-star"></span> 4.5</span
+              >
+            </div>
+            <p class="comment-text">
+              بسیار دقیق به حرفام گوش دادن و اصلاً قضاوت نکردن. فضای اتاق مشاوره
+              هم خیلی خوب و آروم بود. حتماً پیشنهاد می‌کنم اگر مشکلی دارید وقت
+              بگیرید.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!---------------------------------------------------------------------------------------------->
+    <footer id="contact_us">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره‌ی مرکز مشاوره‌ی دانشگاه</h3>
+          <p>
+            این سامانه بستری برای دسترسی سریع و آسان دانشجویان به خدمات مشاوره
+            دانشگاه است. تمامی جلسات به صورت کاملاً محرمانه برگزار می‌شوند
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>لینک های مفید</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران ما</a></li>
+            <li><a href="login.html">ورود به پنل کاربری</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>ارتباط با ما</h3>
+          <p>
+            <span class="icon-location">.</span> مجتمع فرهنگی دانشگاه ، طبقه دوم
+          </p>
+          <p><span class="icon-telephone">.</span> 061-424-8000</p>
+          <p><span class="icon-email">.</span> markaz_moshavereh@jsu.ac.ir</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- t.me/DarkWinter_83  -->

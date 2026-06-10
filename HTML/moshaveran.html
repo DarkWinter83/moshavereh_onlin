@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشاوران دانشگاه</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/moshaveran.css" />
+  </head>
+  <body id="logged-in">
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo-brand">
+          <img src="../ASSETS/IMAGE/logo.svg" alt="لوگوی سایت مشاوره" />
+          <span>سایت مشاوره‌ی دانشگاه</span>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">صفحه‌ی اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران</a></li>
+            <li><a href="about.html">درباره‌ی مرکز مشاوره</a></li>
+            <li><a href="#contact_us">ارتباط با ما</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="login.html" class="nav-auth-btn guest-element"
+            >ورود | ثبت‌نام</a
+          >
+          <a href="profile_student.html" class="nav-profile-btn user-element"
+            ><span class="icon-person">.</span> پروفایل من</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!---------------------------------------------------------------------------------------------->
+    <main class="global-container moshaveran-container">
+      <aside class="filter-sidebar">
+        <div class="sidebar-block">
+          <h3>نوع مشاوره</h3>
+          <div class="finter-options">
+            <label class="check-lable">
+              <input type="checkbox" name="type" value="presence" />
+              <span>مشاوره حضوری</span>
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="type" value="online" />
+              <span>مشاوره آنلاین </span>
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="type" value="oncall" />
+              <span>مشاوره تلفنی</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <h3>تخصص‌ها</h3>
+          <div class="filter-options">
+            <label class="check-label">
+              <input type="checkbox" name="specialty" value="individual" />
+              <span>مشاوره فردی و روانی</span>
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="specialty" value="academic" />
+              <span>مشاوره تحصیلی و برنامه ریزی</span>
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="specialty" value="family" />
+              <span>مشاوره خانواده و ازدواج</span>
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="specialty" value="stress" />
+              <span>کنترل استرس و اضطراب</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" class="apply-filters-btn">اعمال فیلترها</button>
+      </aside>
+      <!---------------------------------------------------------------------------------------------->
+      <section class="consulations-list-section">
+        <div class="list-header">
+            <h2>مشاوران فعال مرکز</h2>
+            <span class="results-count">(4) مورد یافت شد</span>
+        </div>
+<article class="long-consultant-card">
+            <img src="../ASSETS/IMAGE/download (1).jpg" alt="دکتر علی علوی" class="card-avatar" />
+            <div class="card-details">
+              <h3>دکتر علی علوی</h3>
+              <p class="specialty-text">تخصص: مشاوره فردی و روانشناختی، کنترل اضطراب</p>
+              <p class="experience-text">تجربه: 12 سال سابقه بالینی</p>
+              <div class="card-badges">
+                <span class="badge presence">حضوری</span>
+                <span class="badge online">آنلاین</span>
+                <span class="badge oncall">تلفنی</span>
+              </div>
+            </div>
+            <div class="card-action">
+              <div class="rating">
+                <span class="icon-star"></span> <strong>4.9</strong> (62 نظر)
+              </div>
+              <a href="profile_moshaveran.html" class="view-profile-btn">مشاهده پروفایل و رزرو</a>
+            </div>
+          </article>
+
+          <article class="long-consultant-card">
+            <img src="../ASSETS/IMAGE/download (2).jpg" alt="دکتر مریم احمدی" class="card-avatar" />
+            <div class="card-details">
+              <h3>دکتر مریم احمدی</h3>
+              <p class="specialty-text">تخصص: مشاوره تحصیلی، افزایش تمرکز و کاهش استرس</p>
+              <p class="experience-text">تجربه: 8 سال سابقه بالینی</p>
+              <div class="card-badges">
+                <span class="badge online">آنلاین</span>
+                <span class="badge oncall">تلفنی</span>
+              </div>
+            </div>
+            <div class="card-action">
+              <div class="rating">
+                <span class="icon-star"></span> <strong>4.8</strong> (45 نظر)
+              </div>
+              <a href="profile_moshaveran.html" class="view-profile-btn">مشاهده پروفایل و رزرو</a>
+            </div>
+          </article>
+
+          <article class="long-consultant-card">
+            <img src="../ASSETS/IMAGE/download (3).jpg" alt="دکتر احمد حسینی" class="card-avatar" />
+            <div class="card-details">
+              <h3>دکتر احمد حسینی</h3>
+              <p class="specialty-text">تخصص: مشاوره خانواده، بهبود روابط اجتماعی و بین‌فردی</p>
+              <p class="experience-text">تجربه: 5 سال سابقه بالینی</p>
+              <div class="card-badges">
+                <span class="badge presence">حضوری</span>
+                <span class="badge oncall">تلفنی</span>
+              </div>
+            </div>
+            <div class="card-action">
+              <div class="rating">
+                <span class="icon-star"></span> <strong>4.6</strong> (28 نظر)
+              </div>
+              <a href="profile_moshaveran.html" class="view-profile-btn">مشاهده پروفایل و رزرو</a>
+            </div>
+          </article>
+
+          <article class="long-consultant-card">
+            <img src="../ASSETS/IMAGE/download (3).jpg" alt=" دکتر احمد حسینی اصلی" class="card-avatar" />
+            <div class="card-details">
+              <h3> دکتر احمد حسینی اصلی</h3>
+              <p class="specialty-text">تخصص: مشاوره خانواده، بهبود روابط اجتماعی و بین‌فردی</p>
+              <p class="experience-text">تجربه: 6 سال سابقه بالینی</p>
+              <div class="card-badges">
+                <span class="badge oncall">تلفنی</span>
+              </div>
+            </div>
+            <div class="card-action">
+              <div class="rating">
+                <span class="icon-star"></span> <strong>4.6</strong> (28 نظر)
+              </div>
+              <a href="profile_moshaveran.html" class="view-profile-btn">مشاهده پروفایل و رزرو</a>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+    </main>
+    <!---------------------------------------------------------------------------------------------->
+    <footer id="contact_us">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره‌ی مرکز مشاوره‌ی دانشگاه</h3>
+          <p>
+            این سامانه بستری برای دسترسی سریع و آسان دانشجویان به خدمات مشاوره
+            دانشگاه است. تمامی جلسات به صورت کاملاً محرمانه برگزار می‌شوند
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>لینک های مفید</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران ما</a></li>
+            <li><a href="login.html">ورود به پنل کاربری</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>ارتباط با ما</h3>
+          <p>
+            <span class="icon-location">.</span> مجتمع فرهنگی دانشگاه ، طبقه دوم
+          </p>
+          <p><span class="icon-telephone">.</span> 061-424-8000</p>
+          <p><span class="icon-email">.</span> markaz_moshavereh@jsu.ac.ir</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- t.me/DarkWinter_83  -->

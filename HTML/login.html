@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به حساب کاربری</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/auth.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo-brand">
+          <img src="../ASSETS/IMAGE/logo.svg" alt="لوگوی سایت مشاوره" />
+          <span>سایت مشاوره‌ی دانشگاه</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="active">
+              <span class="icon-home">.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!---------------------------------------------------------------------------------------------->
+    <main class="auth-page-main">
+      <div class="auth-card">
+        <h2>ورود به سامانه مشاوره</h2>
+        <p class="auth-subtitle">
+          جهت رزرو نوبت و مشاهده مراجعات خود وارد شوید
+        </p>
+
+        <form action="index.html#logged-in" method="get">
+          <div class="form-group">
+            <label for="student_id">شماره دانشجویی</label>
+            <input
+              type="text"
+              id="student_id"
+              name="student_id"
+              required
+              placeholder="مثال: ۴۰۱۱۲۳۴۵"
+            />
+          </div>
+
+          <div class="form-group password-wrapper">
+            <label for="password">رمز عبور</label>
+            <input
+              type="checkbox"
+              id="toggle-password-check"
+              class="toggle-checkbox"
+            />
+
+            <input
+              type="password"
+              id="student_password"
+              name="password"
+              placeholder="••••••••"
+              required
+              class="input-pass-hidden"
+            />
+
+            <input
+              type="text"
+              id="student_password_text"
+              placeholder="••••••••"
+              class="input-pass-shown"
+            />
+
+            <label
+              for="toggle-password-check"
+              class="toggle-label"
+              title="نمایش/مخفی‌سازی رمز عبور"
+            >
+              <span class="icon-eye-open"></span>
+              <span class="icon-eye-close"></span>
+            </label>
+          </div>
+
+          <button type="submit" class="auth-submit-btn">ورود به حساب</button>
+        </form>
+        <div class="auth-footer">
+          <span>هنوز ثبت‌نام نکرده‌اید؟</span>
+          <a href="register.html">ایجاد حساب کاربری (ثبت‌نام)</a>
+        </div>
+      </div>
+    </main>
+    <!---------------------------------------------------------------------------------------------->
+    <footer id="contact_us">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره‌ی مرکز مشاوره‌ی دانشگاه</h3>
+          <p>
+            این سامانه بستری برای دسترسی سریع و آسان دانشجویان به خدمات مشاوره
+            دانشگاه است. تمامی جلسات به صورت کاملاً محرمانه برگزار می‌شوند
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>لینک های مفید</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران ما</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>ارتباط با ما</h3>
+          <p>
+            <span class="icon-location">.</span> مجتمع فرهنگی دانشگاه ، طبقه دوم
+          </p>
+          <p><span class="icon-telephone">.</span> 061-424-8000</p>
+          <p><span class="icon-email">.</span> markaz_moshavereh@jsu.ac.ir</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- t.me/DarkWinter_83  -->

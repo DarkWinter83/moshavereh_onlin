@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به حساب کاربری</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/auth.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo-brand">
+          <img src="../ASSETS/IMAGE/logo.svg" alt="لوگوی سایت مشاوره" />
+          <span>سایت مشاوره‌ی دانشگاه</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="active">
+              <span class="icon-home">.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!---------------------------------------------------------------------------------------------->
+    <main class="auth-page-main">
+      <div class="auth-card">
+        <h2>ثبت‌نام در سامانه</h2>
+        <p class="auth-subtitle">
+          لطفاً اطلاعات خود را به طور دقیق وارد نمایید
+        </p>
+
+        <form action="login.html" method="get">
+          <div class="form-group">
+            <label for="full_name">نام و نام خانوادگی</label>
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              required placeholder="مثال: علی حسینی"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="student_id">شماره دانشجویی</label>
+            <input
+              type="text"
+              id="student_id"
+              name="student_id"
+              required
+              placeholder="مثال: ۴۰۱۱۲۳۴۵"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">شماره موبایل</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="مثال: ۰۹۱۲۳۴۵۶۷۸۹"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>جنسیت</label>
+            <div class="gender-options">
+              <label class="radio-label">
+                <input type="radio" name="gender" value="male" checked />
+                <span > آقا</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="female" />
+                <span> خانم</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">رمز عبور دلخواه</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="حداقل ۶ کاراکتر"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">تکرار رمز عبور</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="حداقل ۶ کاراکتر"
+            />
+          </div>
+          
+          <button type="submit" class="auth-submit-btn">ورود به حساب</button>
+        </form>
+        <div class="auth-footer">
+          <span>قبلا ثبت‌نام کرده‌اید؟</span>
+          <a href="login.html">ورود به حساب کاربری </a>
+        </div>
+      </div>
+    </main>
+    <!---------------------------------------------------------------------------------------------->
+    <footer id="contact_us">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره‌ی مرکز مشاوره‌ی دانشگاه</h3>
+          <p>
+            این سامانه بستری برای دسترسی سریع و آسان دانشجویان به خدمات مشاوره
+            دانشگاه است. تمامی جلسات به صورت کاملاً محرمانه برگزار می‌شوند
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>لینک های مفید</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران ما</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>ارتباط با ما</h3>
+          <p>
+            <span class="icon-location">.</span> مجتمع فرهنگی دانشگاه ، طبقه دوم
+          </p>
+          <p><span class="icon-telephone">.</span> 061-424-8000</p>
+          <p><span class="icon-email">.</span> markaz_moshavereh@jsu.ac.ir</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
+      </div>
+    </footer>
+  </body>
+</html>
