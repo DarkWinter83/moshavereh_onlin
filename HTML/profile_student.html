@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پروفایل کاربری - سامانه مشاوره دانشگاه</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/profile_student.css" />
+  </head>
+  <body id="logged-in">
+
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo-brand">
+          <img src="../ASSETS/IMAGE/logo.svg" alt="لوگوی سایت مشاوره" />
+          <span>سایت مشاوره‌ی دانشگاه</span>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">صفحه‌ی اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران</a></li>
+            <li><a href="about.html">درباره‌ی مرکز مشاوره</a></li>
+            <li><a href="#contact_us">ارتباط با ما</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="index.html" class="nav-auth-btn user-element">خروج از حساب</a>
+        </div>
+      </div>
+    </header>
+
+<main class="profile-page-main-center">
+  
+     <section class="profile-auth-style-card">
+    <h2>نوبت‌های جاری شما</h2>
+    <p class="profile-subtitle">لیست رزروهای فعال و زمان جلسات آینده شما.</p>
+
+    <div class="appointments-vertical-list">
+      
+      <div class="appointment-compact-item card-status-active">
+        <div class="appointment-info">
+          <h4>دکتر مریم امیدی</h4>
+          <p class="specialty-text">مشاوره تحصیلی و کنترل استرس</p>
+          <div class="time-meta-vertical">
+            <span>📅 دوشنبه - ۲۵ خرداد</span>
+            <span>⏰ ساعت ۱۰:۳۰ صبح</span>
+          </div>
+        </div>
+        <div class="appointment-badges">
+          <span class="badge-status status-confirmed">تایید شده</span>
+          <span class="badge-type">حضوری</span>
+        </div>
+      </div>
+
+      <div class="appointment-compact-item card-status-pending">
+        <div class="appointment-info">
+          <h4>دکتر علی کریمی</h4>
+          <p class="specialty-text">مشاوره فردی و خودشناسی</p>
+          <div class="time-meta-vertical">
+            <span>📅 شنبه - ۳۰ خرداد</span>
+            <span>⏰ ساعت ۱۶:۰۰ عصر</span>
+          </div>
+        </div>
+        <div class="appointment-badges">
+          <span class="badge-status status-pending">در انتظار تایید</span>
+          <span class="badge-type">آنلاین</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="profile-auth-style-card">
+    <h2>ویرایش اطلاعات کاربری</h2>
+    <p class="profile-subtitle">می‌توانید اطلاعات فردی و تماس خود را بروزرسانی کنید.</p>
+    
+    <form action="#" method="post" class="profile-vertical-form">
+      <div class="form-group-vertical">
+        <label for="student_name">نام و نام خانوادگی</label>
+        <input type="text" id="student_name" value="یاسین نخلی صحرائی" required />
+      </div>
+
+      <div class="form-group-vertical">
+        <label for="student_id">شماره دانشجویی (غیرقابل تغییر)</label>
+        <input type="text" id="student_id" value="4021234567" disabled class="input-disabled" />
+      </div>
+
+      <div class="form-group-vertical">
+        <label for="student_phone">شماره موبایل</label>
+        <input type="tel" id="student_phone" value="09161112233" required />
+      </div>
+
+      <div class="form-group-vertical">
+        <label for="student_email">آدرس ایمیل</label>
+        <input type="email" id="student_email" value="yasin@example.com" required />
+      </div>
+
+      <div class="form-group-vertical">
+        <label for="student_password">کلمه عبور جدید</label>
+        <input type="password" id="student_password" placeholder="********" />
+      </div>
+
+      <button type="submit" class="profile-submit-btn">ذخیره تغییرات</button>
+    </form>
+  </section>
+
+ 
+
+</main>
+
+    <footer id="contact_us">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>درباره‌ی مرکز مشاوره‌ی دانشگاه</h3>
+          <p>این سامانه بستری برای دسترسی سریع و آسان دانشجویان به خدمات مشاوره دانشگاه است.</p>
+        </div>
+        <div class="footer-section">
+          <h3>لینک های مفید</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="moshaveran.html">مشاوران ما</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>ارتباط با ما</h3>
+          <p><span class="icon-location">.</span> مجتمع فرهنگی دانشگاه ، طبقه دوم</p>
+          <p><span class="icon-telephone">.</span> 061-424-8000</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

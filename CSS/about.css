@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+padding: 0 130px;
 }
 
 .about-hero-card {
   background: linear-gradient(135deg, #b1effe 0%, #e0f7fc 100%);
-  border-radius: 20px;
-  padding: 50px 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 80px 40px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+
 }
 .about-hero-card h1 {
   font-size: 2rem;
