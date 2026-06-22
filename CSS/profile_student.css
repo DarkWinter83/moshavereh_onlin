@@ -106,11 +106,11 @@
 }
 
 .card-status-active {
-  border-right: 4px solid #047e0e;
+  border-right: 4px solid #00db12;
 }
 
 .card-status-pending {
-  border-right: 4px solid #eab308;
+  border-right: 4px solid #ffc800;
 }
 
 .appointment-info h4 {
@@ -163,4 +163,28 @@
   border-radius: 6px;
   color: #475569;
   background-color: #e2e8f0;
+}
+/*icons*/
+
+.icon-calander {
+  display: inline-block;
+  width: 22px;
+  height: 13px;
+  mask-image: url("../ASSETS/ICON/calendar-alt-svgrepo-com.svg");
+  align-items: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  vertical-align: middle;
+  background-color: #000000;
+}
+.icon-clock {
+  display: inline-block;
+  width: 22px;
+  height: 13px;
+  mask-image: url("../ASSETS/ICON/clock-svgrepo-com.svg");
+  align-items: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  vertical-align: middle;
+  background-color: #000000;
 }

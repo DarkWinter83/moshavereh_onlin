@@ -2,8 +2,8 @@
 .moshaveran-container {
   display: flex;
   gap: 30px;
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding: 50px 400px 0 0;
+ 
 }
 .filter-sidebar {
   flex: 0 0 280px;
@@ -75,6 +75,7 @@
 /* consultant */
 .consultants-list-section {
   flex: 1;
+
 }
 .list-header {
   display: flex;
@@ -107,6 +108,8 @@
   transition:
     transform 0.2s,
     box-shadow 0.2s;
+    margin-bottom: 10px;
+    
 }
 .long-consultant-card:hover {
   transform: translateY(-2px);
