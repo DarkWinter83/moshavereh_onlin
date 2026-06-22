@@ -104,7 +104,7 @@
 }
 
 .toggle-label .icon-eye-close {
-  display: none; 
+  display: none;
 }
 
 .input-pass-shown {
@@ -127,28 +127,62 @@
 }
 /* register */
 .gender-options {
-    display: flex;
-    gap: 20px;
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
+  display: flex;
+  gap: 20px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
 }
 
 .radio-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #334155;
 }
 
 .radio-label input {
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
 }
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+}
+.dob-inputs-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  direction: ltr; /* برای چیدمان درست فیلدها به صورت چپ به راست */
+}
+
+/* استایل مشترک ورودی‌های روز، ماه و سال */
+.dob-input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-family: "Shabnam", sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* عریض‌تر بودن فیلد سال نسبت به روز و ماه */
+.dob-year {
+  flex: 2;
+}
+
+.dob-month,
+.dob-day {
+  flex: 1.5;
+}
+
 /* icons */
 .icon-eye-close {
   display: inline-block;

@@ -6,6 +6,13 @@
     <title>ورود به حساب کاربری</title>
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/auth.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@majidhajian/persian-datepicker@1.1.4/dist/css/persian-datepicker.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@majidhajian/persian-date@1.1.4/dist/persian-date.min.js"></script>
+    <script src="https://unpkg.com/@majidhajian/persian-datepicker@1.1.4/dist/js/persian-datepicker.min.js"></script>
   </head>
   <body>
     <header>
@@ -33,76 +40,142 @@
           لطفاً اطلاعات خود را به طور دقیق وارد نمایید
         </p>
 
-        <form action="login.html" method="get">
+        <form id="registerForm" novalidate>
           <div class="form-group">
-            <label for="full_name">نام و نام خانوادگی</label>
+            <label for="full_name"
+              >نام و نام خانوادگی <span style="color: red">*</span></label
+            >
             <input
               type="text"
               id="full_name"
-              name="full_name"
-              required placeholder="مثال: علی حسینی"
+              placeholder="نام و نام خانوادگی خود را وارد کنید"
+              required
             />
+            <span
+              class="error-message"
+              id="nameError"
+              style="color: red; font-size: 0.8rem; display: none"
+            ></span>
           </div>
 
           <div class="form-group">
-            <label for="student_id">شماره دانشجویی</label>
+            <label for="student_code"
+              >شماره دانشجویی <span style="color: red">*</span></label
+            >
             <input
               type="text"
-              id="student_id"
-              name="student_id"
+              id="student_code"
+              placeholder="4021234567"
               required
-              placeholder="مثال: ۴۰۱۱۲۳۴۵"
             />
+            <span
+              class="error-message"
+              id="codeError"
+            ></span>
           </div>
 
           <div class="form-group">
-            <label for="phone">شماره موبایل</label>
+            <label for="phone"
+              >شماره موبایل <span style="color: red">*</span></label
+            >
             <input
               type="tel"
               id="phone"
-              name="phone"
+              placeholder="09XXXXXXXXX"
               required
-              placeholder="مثال: ۰۹۱۲۳۴۵۶۷۸۹"
             />
+            <span
+              class="error-message"
+              id="phoneError"
+            ></span>
           </div>
 
           <div class="form-group">
-            <label>جنسیت</label>
-            <div class="gender-options">
-              <label class="radio-label">
-                <input type="radio" name="gender" value="male" checked />
-                <span > آقا</span>
-              </label>
-              <label class="radio-label">
-                <input type="radio" name="gender" value="female" />
-                <span> خانم</span>
-              </label>
-            </div>
+            <label for="email">ایمیل <span style="color: red">*</span></label>
+            <input
+              type="text"
+              id="email"
+              placeholder=" student@jsu.ac.ir"
+              required
+            />
+            <span
+              class="error-message"
+              id="emailError"
+            ></span>
           </div>
 
-          <div class="form-group">
-            <label for="password">رمز عبور دلخواه</label>
+         <div class="form-group">
+  <label>تاریخ تولد کامل <span style="color: red">*</span></label>
+  <div class="dob-inputs-row">
+    
+    <input 
+      type="text" 
+      id="birth_year" 
+      placeholder="سال (مثال: 1382)" 
+      maxlength="4" 
+      class="dob-input dob-year"
+    />
+
+    <input 
+      type="text" 
+      id="birth_month" 
+      placeholder="ماه (01 تا 12)" 
+      maxlength="2" 
+      class="dob-input dob-month"
+    />
+
+    <input 
+      type="text" 
+      id="birth_day" 
+      placeholder="روز (01 تا 31)" 
+      maxlength="2" 
+      class="dob-input dob-day"
+    />
+
+  </div>
+  <span class="error-message" id="dateError"></span>
+</div>
+          <div class="form-group" style="position: relative">
+            <label for="password"
+              >کلمه عبور <span style="color: red">*</span></label
+            >
             <input
               type="password"
               id="password"
-              name="password"
+              class="input-pass-hidden"
+              placeholder="حداقل 6 کاراکتر"
               required
-              placeholder="حداقل ۶ کاراکتر"
             />
+            <span
+              class="error-message"
+              id="passError"
+            ></span>
           </div>
 
           <div class="form-group">
-            <label for="password">تکرار رمز عبور</label>
+            <label for="confirm_password"
+              >تکرار کلمه عبور <span style="color: red">*</span></label
+            >
             <input
               type="password"
-              id="password"
-              name="password"
+              id="confirm_password"
+              placeholder="تکرار کلمه عبور را وارد کنید"
               required
-              placeholder="حداقل ۶ کاراکتر"
             />
+            <span
+              class="error-message"
+              id="confirmPassError"
+            ></span>
           </div>
-          
-          <button type="submit" class="auth-submit-btn">ورود به حساب</button>
+
+          <div
+            id="formStatusMessage"
+            style="text-align: center; margin-top: 10px; font-weight: bold"
+          ></div>
+
+          <button type="submit" class="auth-submit-btn">
+            ثبت‌نام در سامانه
+          </button>
         </form>
         <div class="auth-footer">
           <span>قبلا ثبت‌نام کرده‌اید؟</span>
@@ -140,6 +213,7 @@
         <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
       </div>
     </footer>
+    <script src="../JS/register.js"></script>
   </body>
 </html>
 <!-- t.me/DarkWinter83  -->
