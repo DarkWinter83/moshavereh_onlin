@@ -1,22 +1,37 @@
-/* consultant */
+@font-face {
+  font-family: "Shabnam";
+  src: url(../ASSETS/FONT/Shabnam.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Shabnam";
+  src: url(../ASSETS/FONT/Shabnam-Bold.woff2) format(woff2);
+  font-weight: bold;
+  font-style: normal;
+}
 .profile-page-main {
   gap: 30px;
   padding: 50px 60px;
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .consultant-info-card,
 .booking-box-card,
 .comments-section-card {
   background-color: #ffffff;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
   border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 30px;
-  margin-left: 300px;
-  margin-right: 300px;
+  width: 100%;
+  max-width: 900px;
   margin-bottom: 10px;
+  display: flex;             
+  flex-direction: column;
 }
 .info-header {
   display: flex;
@@ -32,7 +47,6 @@
 }
 .info-text h2 {
   font-size: 1.8rem;
-
   margin-bottom: 8px;
   color: #1e293b;
 }
@@ -80,7 +94,6 @@
   border-radius: 8px;
   display: inline-block;
 }
-/* nobat */
 .booking-box-card h2 {
   font-size: 1.5rem;
   color: #1e293b;
@@ -229,7 +242,6 @@
 .submit-booking-btn:hover {
   background-color: #0056b3;
 }
-/* coment */
 .comments-header {
   display: flex;
   justify-content: space-between;
@@ -288,7 +300,109 @@
   font-size: 0.9rem;
 }
 
-/* icons */
+.comment-form-block {
+  max-height: 0; 
+  opacity: 0; 
+  overflow: hidden; 
+  padding: 0 20px; 
+  background-color: #f8fafc;
+  border: 1px dashed transparent; 
+  border-radius: 12px;
+  margin-bottom: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.4s ease,
+    padding 0.4s ease,
+    margin 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.comment-form-block.show {
+  max-height: 500px; 
+  opacity: 1; 
+  padding: 20px; 
+  border-color: #cbd5e1; 
+  margin-bottom: 25px; 
+}
+
+.form-group-comment {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group-comment label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #334155;
+}
+
+.form-group-comment input[type="text"],
+.form-group-comment input[type="number"],
+.form-group-comment select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+.form-group-comment input:focus,
+.form-group-comment textarea:focus,
+.form-group-comment select:focus {
+  border-color: #007bff;
+}
+
+.submit-comment-action-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-comment-action-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.8rem;
+  display: none;
+  margin-top: 2px;
+}
+
+.clear-comments-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.clear-comments-btn:hover {
+  background-color: #dc2626;
+}
+
+.clear-comments-btn:active {
+  transform: scale(0.98);
+}
+
 .icon-star {
   display: inline-block;
   width: 22px;
@@ -300,5 +414,18 @@
   vertical-align: middle;
   background-color: #ffee00;
 }
+
+.icon-trash {
+  display: inline-block;
+  width: 22px;
+  height: 13px;
+  mask-image: url("../ASSETS/ICON/trash-xmark-alt-svgrepo-com.svg");
+  align-items: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  vertical-align: middle;
+  background-color: #000000;
+}
+
 /* t.me/DarkWinter83 */
 /* github.com/DarkWinter83 */

@@ -25,50 +25,12 @@
   margin-bottom: 35px;
 }
 
-.search-box {
-  display: flex;
-  max-width: 600px;
-  height: 70px;
-  margin: 0 auto 40px auto;
-  background-color: #fff;
-  padding: 6px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.search-box input {
-  flex: 1;
-  border: none;
-  padding: 12px 15px;
-  font-size: 1rem;
-  outline: none;
-  background: transparent;
-}
-
-.search-box button {
-  background-color: #b1effe;
-  color: #fff;
-  border: none;
-  padding: 5px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  align-items: center;
-}
-
-.search-box button:hover {
-  background-color: #3894f7;
-}
-
 .consulation-types {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
   width: 100%;
-  
 }
 
 .type-card {
@@ -82,17 +44,16 @@
   align-items: center;
   gap: 10px;
   min-width: 160px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
-  border: 1px solid f1f5f9;
-  margin: 15px 85px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #f1f5f9;
   margin: 0;
 }
+
 .type-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 77, 255, 0.1);
 }
+
 .type-card span {
   font-weight: bold;
   color: #334155;
@@ -107,6 +68,7 @@
   padding: 60px 0;
   background-color: #ffffff;
 }
+
 .about-section h2 {
   font-size: 1.6rem;
   color: #1e293b;
@@ -125,14 +87,13 @@
   background-color: #007bff;
   border-radius: 2px;
 }
+
 .about-content p {
   font-size: 1rem;
   color: #475569;
   line-height: 1.9;
   text-align: justify;
 }
-
-/* cards */
 
 .popular-consultants {
   padding: 60px 0;
@@ -205,6 +166,7 @@
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+
 .consultant-img {
   width: 100px;
   height: 100px;
@@ -213,21 +175,25 @@
   margin-bottom: 15px;
   border: 3px solid #e2e8f0;
 }
+
 .consultant-name {
   font-size: 1.15rem;
   color: #1e293b;
   margin-bottom: 10px;
 }
+
 .consultant-specialty {
   font-size: 0.9rem;
   color: #64748b;
   margin-bottom: 8px;
 }
+
 .consultant-exp {
   font-size: 0.85rem;
   color: #94a3b8;
   margin-bottom: 12px;
 }
+
 .consultant-rating {
   font-size: 0.9rem;
   color: #ff5900;
@@ -236,6 +202,7 @@
   padding: 4px 12px;
   border-radius: 20px;
 }
+
 .book-btn {
   display: block;
   width: 100%;
@@ -249,11 +216,12 @@
   border: 1px solid #bbf7d0;
   transition: all 0.2s;
 }
+
 .book-btn:hover {
   background-color: #15803d;
   color: #ffffff;
 }
-/* coments */
+
 .reviews-section {
   padding: 60px 0;
   background-color: #f1f5f9;
@@ -275,6 +243,7 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
+
 .reviews-grid::-webkit-scrollbar {
   height: 6px;
 }
@@ -283,6 +252,7 @@
   background-color: #cbd5e1;
   border-radius: 10px;
 }
+
 .review-card {
   background-color: #ffffff;
   border-radius: 16px;
@@ -292,95 +262,199 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .review-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
+
 .review-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
+
 .user-name {
   font-weight: bold;
   color: #334155;
   font-size: 0.95rem;
 }
+
 .user-rating {
   color: #eab308;
   font-weight: bold;
 }
+
 .review-target {
   font-size: 0.85rem;
   color: #007bff;
   margin-bottom: 12px;
   font-weight: 500;
 }
+
 .review-text {
   font-size: 0.95rem;
   color: #475569;
   line-height: 1.7;
 }
-/* icons */
+
+.slider-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.slider-section .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mySlides {
+  display: none;
+}
+
+.slider-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.prev-slide, .next-slide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next-slide {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-slide {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev-slide:hover, .next-slide:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-caption {
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  font-weight: bold;
+}
+
+.slider-dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #007bff;
+}
+
+.fade {
+  animation-name: fadeAnimation;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeAnimation {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    margin: 0 15px;
+    padding: 40px 15px;
+  }
+
+  .hero-container h1 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .hero-container p {
+    font-size: 0.95rem;
+  }
+}
 
 .icon-building {
   display: inline-block;
   width: 35px;
   height: 35px;
-
   mask-image: url("../ASSETS/ICON/building-svgrepo-com.svg");
   vertical-align: middle;
-
   mask-size: contain;
   mask-repeat: no-repeat;
-
   background-color: #000000;
 }
 
-.icon-magnify {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  mask-image: url("../ASSETS/ICON/magnify-svgrepo-com.svg");
-
-  mask-size: contain;
-  mask-repeat: no-repeat;
-
-  background-color: #000000;
-}
-.icon-magnify:hover {
-  background-color: #fff;
-}
 .icon-web {
   display: inline-block;
   width: 35px;
   height: 35px;
   mask-image: url("../ASSETS/ICON/web-svgrepo-com.svg");
-
   mask-size: contain;
   mask-repeat: no-repeat;
   vertical-align: middle;
-
   background-color: #000000;
 }
+
 .icon-telephone2 {
   display: inline-block;
   width: 35px;
   height: 35px;
   mask-image: url("../ASSETS/ICON/telephone-receiver-material-2-svgrepo-com.svg");
-
   mask-size: contain;
   mask-repeat: no-repeat;
   vertical-align: middle;
-
   background-color: #000000;
 }
+
 .icon-star {
   display: inline-block;
   width: 22px;
   height: 13px;
   mask-image: url("../ASSETS/ICON/star-svgrepo-com.svg");
-  align-items: center;
   mask-size: contain;
   mask-repeat: no-repeat;
   vertical-align: middle;

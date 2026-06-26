@@ -1,9 +1,11 @@
-/* sidebar */
 .moshaveran-container {
   display: flex;
   gap: 30px;
-  padding: 50px 400px 0 0;
- 
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 .filter-sidebar {
   flex: 0 0 280px;
@@ -28,17 +30,6 @@
   font-size: 1.05rem;
   color: #1e293b;
   margin-bottom: 15px;
-}
-.sidebar-search-box input {
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
-  font-size: 0.9rem;
-}
-
-.sidebar-search-box input:focus {
-  border-color: #007bff;
 }
 .filter-options {
   display: flex;
@@ -72,10 +63,10 @@
 .apply-filters-btn:hover {
   background-color: #0056b3;
 }
-/* consultant */
 .consultants-list-section {
   flex: 1;
-
+  max-width: 890px;
+  width: 100%;
 }
 .list-header {
   display: flex;
@@ -108,8 +99,7 @@
   transition:
     transform 0.2s,
     box-shadow 0.2s;
-    margin-bottom: 10px;
-    
+  margin-bottom: 10px;
 }
 .long-consultant-card:hover {
   transform: translateY(-2px);
@@ -165,7 +155,7 @@
 .card-action {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center; 
   gap: 15px;
   min-width: 160px;
 }
@@ -194,24 +184,46 @@
   color: #fff;
 }
 
-.view-profile-btn {
-  text-align: center;
-}
-
-.card-action {
-  align-items: center; 
-}
-/* icons */
 .icon-star {
   display: inline-block;
   width: 22px;
   height: 13px;
   mask-image: url("../ASSETS/ICON/star-svgrepo-com.svg");
-  align-items: center;
   mask-size: contain;
   mask-repeat: no-repeat;
   vertical-align: middle;
   background-color: #ffee00;
+}
+
+@media (max-width: 992px) {
+  .moshaveran-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter-sidebar {
+    width: 100%;
+    max-width: 890px;
+    flex: 1 1 auto;
+    position: static;
+  }
+  .consultants-list-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .long-consultant-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 25px 15px;
+  }
+  .card-badges {
+    justify-content: center;
+  }
+  .card-action {
+    width: 100%;
+  }
 }
 /* t.me/DarkWinter83 */
 /* github.com/DarkWinter83 */
