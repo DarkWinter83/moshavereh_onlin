@@ -25,7 +25,8 @@
       </div>
     </header>
 
-    <!---------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
     <main class="auth-page-main">
       <div class="auth-card">
         <h2>ورود به سامانه مشاوره</h2>
@@ -35,36 +36,32 @@
 
         <form action="index.html#logged-in" method="get">
           <div class="form-group">
-            <label for="student_id">شماره دانشجویی</label>
+            <label for="student-id">شماره دانشجویی</label>
             <input
               type="text"
-              id="student_id"
-              name="student_id"
+              id="student-id"
+              name="username"
+              class="form-input"
+              placeholder="مثال: 400123456"
               required
-              placeholder=" شماره دانشجویی خود را وارد کنید"
             />
           </div>
 
-          <div class="form-group password-wrapper">
+          <div class="form-group">
             <label for="password">رمز عبور</label>
-            <input
-              type="checkbox"
-              id="toggle-password-check"
-              class="toggle-checkbox"
-            />
-
-            <input
-              type="password"
-              id="student_password"
-              name="password"
-              placeholder="رمز عبور خود را وارد کنید"
-              required
-              class="input-pass-hidden"
-            />
-
+            <div class="password-wrapper">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-input"
+                placeholder="رمز عبور خود را وارد کنید"
+                required
+              />
+            </div>
           </div>
 
-          <button type="submit" class="auth-submit-btn">ورود به حساب</button>
+          <button type="submit" class="auth-btn">ورود به پنل کاربری</button>
         </form>
         <div class="auth-footer">
           <span>هنوز ثبت‌نام نکرده‌اید؟</span>
@@ -72,7 +69,9 @@
         </div>
       </div>
     </main>
-    <!---------------------------------------------------------------------------------------------->
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
     <footer id="contact_us">
       <div class="footer-container">
         <div class="footer-section">

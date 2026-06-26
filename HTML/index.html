@@ -9,7 +9,6 @@
   </head>
 
   <body id="logged-in">
-
     <header>
       <div class="nav-container">
         <div class="nav-logo-brand">
@@ -25,8 +24,12 @@
           </ul>
         </nav>
         <div>
-          <a href="login.html" class="nav-auth-btn guest-element">ورود | ثبت‌نام</a>
-          <a href="profile_student.html" class="nav-profile-btn user-element"><span class="icon-person">.</span> پروفایل من</a>
+          <a href="login.html" class="nav-auth-btn guest-element"
+            >ورود | ثبت‌نام</a
+          >
+          <a href="profile_student.html" class="nav-profile-btn user-element"
+            ><span class="icon-person">.</span> پروفایل من</a
+          >
         </div>
       </div>
     </header>
@@ -40,10 +43,6 @@
           <p>
             بهترین مشاوران دانشگاه در تخصص های مختلف همراه و راهنمای شما هستند
           </p>
-          <div class="search-box">
-            <input type="text" placeholder="جستوجوی نام مشاور" />
-            <button type="button"><span class="icon-magnify"></span></button>
-          </div>
 
           <div class="consulation-types">
             <a href="moshaveran.html?type=presence" class="type-card">
@@ -79,6 +78,54 @@
         </div>
       </section>
 
+      <section class="slider-section global-container">
+        <h2 class="section-title">رویدادها و کارگاه‌های پیش رو</h2>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img
+              src="../ASSETS/IMAGE/img1.png"
+              alt="کارگاه مدیریت استرس شب امتحان"
+              class="slider-image"
+            />
+            <div class="slider-caption">
+              کارگاه کشوری مدیریت استرس و اضطراب شب امتحان
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="../ASSETS/IMAGE/img2.png"
+              alt="همایش موفقیت تحصیلی"
+              class="slider-image"
+            />
+            <div class="slider-caption">
+              همایش بزرگ انگیزشی و تکنیک‌های موفقیت تحصیلی
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="../ASSETS/IMAGE/img3.png"
+              alt="مشاوره پیش از ازدواج"
+              class="slider-image"
+            />
+            <div class="slider-caption">
+              دوره آموزشی مهارت‌های ارتباطی و مشاوره پیش از ازدواج
+            </div>
+          </div>
+
+          <a class="prev-slide" id="prevBtn">&#10094;</a>
+          <a class="next-slide" id="nextBtn">&#10095;</a>
+        </div>
+
+        <div class="slider-dots-container">
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </section>
+
       <section class="popular-consultants">
         <div class="global-container">
           <div class="section-header">
@@ -86,7 +133,7 @@
             <a href="moshaveran.html" class="see-all-link">مشاهده همه</a>
           </div>
           <div class="consultant-grid">
-            <article class="consultant-card ">
+            <article class="consultant-card">
               <img
                 src="../ASSETS/IMAGE/download (1).jpg"
                 alt="دکتر علی علوی"
@@ -154,7 +201,6 @@
           </div>
         </div>
       </section>
-      <!---------------------------------------------------------------------------------------------->
 
       <section class="reviews-section">
         <div class="global-container">
@@ -266,6 +312,7 @@
         <p>توسعه داده شده توسط یاسین نخلی صحرائی بهار 1405</p>
       </div>
     </footer>
+    <script src="../JS/slider.js"></script>
   </body>
 </html>
 <!-- t.me/DarkWinter83  -->

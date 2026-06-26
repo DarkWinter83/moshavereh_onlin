@@ -3,16 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ورود به حساب کاربری</title>
+    <title>ثبت‌نام در حساب کاربری</title>
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/auth.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@majidhajian/persian-datepicker@1.1.4/dist/css/persian-datepicker.min.css"
-    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/@majidhajian/persian-date@1.1.4/dist/persian-date.min.js"></script>
-    <script src="https://unpkg.com/@majidhajian/persian-datepicker@1.1.4/dist/js/persian-datepicker.min.js"></script>
   </head>
   <body>
     <header>
@@ -31,8 +25,8 @@
         </ul>
       </div>
     </header>
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
-    <!---------------------------------------------------------------------------------------------->
     <main class="auth-page-main">
       <div class="auth-card">
         <h2>ثبت‌نام در سامانه</h2>
@@ -51,11 +45,7 @@
               placeholder="نام و نام خانوادگی خود را وارد کنید"
               required
             />
-            <span
-              class="error-message"
-              id="nameError"
-              style="color: red; font-size: 0.8rem; display: none"
-            ></span>
+            <span class="error-message" id="nameError"></span>
           </div>
 
           <div class="form-group">
@@ -68,26 +58,15 @@
               placeholder="4021234567"
               required
             />
-            <span
-              class="error-message"
-              id="codeError"
-            ></span>
+            <span class="error-message" id="codeError"></span>
           </div>
 
           <div class="form-group">
             <label for="phone"
               >شماره موبایل <span style="color: red">*</span></label
             >
-            <input
-              type="tel"
-              id="phone"
-              placeholder="09XXXXXXXXX"
-              required
-            />
-            <span
-              class="error-message"
-              id="phoneError"
-            ></span>
+            <input type="tel" id="phone" placeholder="09XXXXXXXXX" required />
+            <span class="error-message" id="phoneError"></span>
           </div>
 
           <div class="form-group">
@@ -95,47 +74,29 @@
             <input
               type="text"
               id="email"
-              placeholder=" student@jsu.ac.ir"
+              placeholder="student@jsu.ac.ir"
               required
             />
-            <span
-              class="error-message"
-              id="emailError"
-            ></span>
+            <span class="error-message" id="emailError"></span>
           </div>
 
-         <div class="form-group">
-  <label>تاریخ تولد کامل <span style="color: red">*</span></label>
-  <div class="dob-inputs-row">
-    
-    <input 
-      type="text" 
-      id="birth_year" 
-      placeholder="سال (مثال: 1382)" 
-      maxlength="4" 
-      class="dob-input dob-year"
-    />
+          <div class="form-group">
+            <label for="birth_year"
+              >سال تولد <span style="color: red">*</span></label
+            >
+            <div class="dob-inputs-row">
+              <input
+                type="text"
+                id="birth_year"
+                placeholder="سال (مثال: 1382)"
+                maxlength="4"
+                class="dob-input dob-year"
+              />
+            </div>
+            <span class="error-message" id="dateError"></span>
+          </div>
 
-    <input 
-      type="text" 
-      id="birth_month" 
-      placeholder="ماه (01 تا 12)" 
-      maxlength="2" 
-      class="dob-input dob-month"
-    />
-
-    <input 
-      type="text" 
-      id="birth_day" 
-      placeholder="روز (01 تا 31)" 
-      maxlength="2" 
-      class="dob-input dob-day"
-    />
-
-  </div>
-  <span class="error-message" id="dateError"></span>
-</div>
-          <div class="form-group" style="position: relative">
+          <div class="form-group">
             <label for="password"
               >کلمه عبور <span style="color: red">*</span></label
             >
@@ -146,10 +107,7 @@
               placeholder="حداقل 6 کاراکتر"
               required
             />
-            <span
-              class="error-message"
-              id="passError"
-            ></span>
+            <span class="error-message" id="passError"></span>
           </div>
 
           <div class="form-group">
@@ -162,28 +120,24 @@
               placeholder="تکرار کلمه عبور را وارد کنید"
               required
             />
-            <span
-              class="error-message"
-              id="confirmPassError"
-            ></span>
+            <span class="error-message" id="confirmPassError"></span>
           </div>
 
-          <div
-            id="formStatusMessage"
-            style="text-align: center; margin-top: 10px; font-weight: bold"
-          ></div>
+          <div id="formStatusMessage" class="form-status-msg"></div>
 
           <button type="submit" class="auth-submit-btn">
             ثبت‌نام در سامانه
           </button>
         </form>
+
         <div class="auth-footer">
           <span>قبلا ثبت‌نام کرده‌اید؟</span>
           <a href="login.html">ورود به حساب کاربری </a>
         </div>
       </div>
     </main>
-    <!---------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
     <footer id="contact_us">
       <div class="footer-container">
         <div class="footer-section">
